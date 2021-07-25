@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainPanel"
+        android:layout_width="911px"
+        android:layout_height="908px"
+        android:layout_marginBottom="60px"
+        android:background="@drawable/fullround" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameOfHeadset"
+        android:layout_width="221dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="60px"
+        android:fontFamily="@font/evob"
+        android:gravity="center"
+        android:text="None"
+        android:textColor="@color/text"
+        android:textSize="72px" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/line"
+        android:layout_width="739px"
+        android:layout_height="5px"
+        android:layout_marginBottom="235px"
+        android:layout_gravity="center"
+        android:background="@color/text" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/linecontact"
+        android:layout_width="150px"
+        android:layout_height="10px"
+        android:layout_marginTop="50px"
+        android:layout_gravity="top|center"
+        android:background="@drawable/fullround_miniline" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="341dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25px"
+        android:src="@drawable/jbl215tws"
+        app:loopCount="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/battery"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="125px"
+        android:layout_marginRight="75px"
+        android:src="@drawable/battery_75"
+        app:loopCount="1"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/batteryLevel"
+        android:layout_width="150px"
+        android:layout_height="75px"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="125px"
+        android:layout_marginLeft="50px"
+        android:fontFamily="@font/evob"
+        android:gravity="center"
+        android:text="100%"
+        android:textColor="@color/text"
+        android:textSize="48px" />
+
+
+</FrameLayout>

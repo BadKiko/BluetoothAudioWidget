@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MainNight" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/base</item>
+        <item name="colorPrimaryVariant">@color/base</item>
+        <item name="colorOnPrimary">@color/text</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/surface</item>
+        <item name="colorSecondaryVariant">@color/surface</item>
+        <item name="colorOnSecondary">@color/overlaylight</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

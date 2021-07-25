@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRoot"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/choosePanel"
+        android:layout_width="959px"
+        android:layout_height="250dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onOffAudioWidget"
+        app:srcCompat="@drawable/fullround"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titleText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/evob"
+        android:text="Показ виджетов"
+        android:textColor="@color/text"
+        android:textSize="72px"
+        app:layout_constraintEnd_toEndOf="@+id/choosePanel"
+        app:layout_constraintStart_toStartOf="@+id/choosePanel"
+        app:layout_constraintTop_toTopOf="@+id/choosePanel" />
+
+    <ImageView
+        android:id="@+id/namePanel"
+        android:layout_width="959px"
+        android:layout_height="387px"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImageBtn"
+        app:srcCompat="@drawable/fullround"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titleText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/evob"
+        android:text="Название наушников"
+        android:textColor="@color/text"
+        android:textSize="72px"
+        app:layout_constraintBottom_toBottomOf="@+id/namePanel"
+        app:layout_constraintEnd_toEndOf="@+id/namePanel"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/namePanel"
+        app:layout_constraintTop_toTopOf="@+id/namePanel"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <ImageView
+        android:id="@+id/titlePanel"
+        android:layout_width="1080px"
+        android:layout_height="193px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tworound"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/evob"
+        android:text="Bluetooth Audio Widget"
+        android:textColor="@color/overlaylight"
+        android:textSize="72px"
+        app:layout_constraintBottom_toBottomOf="@+id/titlePanel"
+        app:layout_constraintEnd_toEndOf="@+id/titlePanel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/onOffAudioWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/evor"
+        android:text="Включить виджет"
+        android:textColor="#BEBEBE"
+        android:textSize="60px"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/titlePanel"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="213px"
+        android:layout_height="119px"
+        android:checked="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:focusedByDefault="false"
+        android:forceHasOverlappingRendering="false"
+        android:showText="false"
+        android:textColor="@color/overlaylight"
+        android:thumb="@drawable/thumbswitch"
+        android:track="@drawable/trackswitch"
+        app:layout_constraintBottom_toBottomOf="@+id/onOffAudioWidget"
+        app:layout_constraintStart_toStartOf="@+id/choosePanel"
+        app:layout_constraintTop_toTopOf="@+id/onOffAudioWidget"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="859px"
+        android:layout_height="107px"
+        android:background="@drawable/inputback"
+        android:ems="10"
+        android:fontFamily="@font/evor"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:text="WH-710N"
+        android:textColor="@color/text"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="@+id/namePanel"
+        app:layout_constraintEnd_toEndOf="@+id/namePanel"
+        app:layout_constraintStart_toStartOf="@+id/namePanel"
+        app:layout_constraintTop_toBottomOf="@+id/titleText4" /><![CDATA[
+
+    ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="279dp"
+        android:layout_height="408dp"
+        app:layout_constraintBottom_toTopOf="@+id/titleText5"
+        app:layout_constraintEnd_toEndOf="@+id/choosePanel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/choosePanel"
+        app:layout_constraintTop_toBottomOf="@+id/titleText2"
+        app:srcCompat="@drawable/_9e4b90bb087387d5c15815efb074dad" />
+
+
+
+
+    ]]>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/jbl215tws"
+        app:layout_constraintBottom_toBottomOf="@+id/choosePanel"
+        app:layout_constraintEnd_toEndOf="@+id/choosePanel"
+        app:layout_constraintStart_toStartOf="@+id/choosePanel"
+        app:layout_constraintTop_toBottomOf="@+id/titleText2" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calibrate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="959px"
+        android:layout_height="49dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/fullround"
+        android:fontFamily="@font/evob"
+        android:text="Добавить наушники"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namePanel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chooseImageBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="959px"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/fullround_miniline"
+        android:backgroundTint="@color/surface"
+        android:fontFamily="@font/evob"
+        android:text="Выбрать изображение"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="@+id/choosePanel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/choosePanel"
+        app:layout_constraintTop_toBottomOf="@+id/choosePanel" />
+
+    <TextView
+        android:id="@+id/titleText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/evob"
+        android:text="Подключите наушники"
+        android:textColor="@color/text"
+        android:textSize="72px"
+        app:layout_constraintBottom_toTopOf="@+id/titleText7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/evor"
+        android:gravity="center"
+        android:text="Как только вы подключите наушники программа запомнит их."
+        android:textColor="@color/text"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="400dp"
+        android:src="@drawable/loading"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/titleText7"
+        app:layout_constraintStart_toStartOf="@+id/titleText7"
+        app:layout_constraintTop_toBottomOf="@+id/titleText7" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="400dp"
+        android:src="@drawable/complete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/titleText7"
+        app:layout_constraintStart_toStartOf="@+id/titleText7"
+        app:layout_constraintTop_toBottomOf="@+id/titleText7"
+        app:loopCount="1" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/headset_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="editTextTextPersonName,namePanel,titleText4"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/show_widgets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="titleText2,gif,choosePanel,chooseImageBtn"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/calibr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="titleText3,titleText7,gif2,closeBtn"
+        tools:layout_editor_absoluteX="392dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/closeBtn"
+        android:layout_width="125px"
+        android:layout_height="125px"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/closebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
