@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                 //Сделать добавление множества наушников если будетн е в лом
 
                 // Если у нас есть зареганные наушники
-                /*if(sharedPref.contains("buttonNum")) {
+                if(sharedPref.contains("buttonNum")) {
 
                     for (buttonInt: Int in 1..sharedPref.getInt("buttonNum", 1)) {
                         val btnHeadsets = Button(this)
@@ -160,7 +160,7 @@ class MainActivity : AppCompatActivity() {
                     addMore.bringToFront()
                 }
                 else
-                {*/
+                {
                     val showanim = AlphaAnimation(0.1f, 1.0f)
                     showanim.duration = 300
                     showanim.fillAfter = true
@@ -173,7 +173,7 @@ class MainActivity : AppCompatActivity() {
 
                     closeBtn.isEnabled = true
                     registerReceiver(registHeadsetB, IntentFilter(BluetoothDevice.ACTION_ACL_CONNECTED))
-                //}
+                }
             }
         }
 
